@@ -1,0 +1,20 @@
+{
+
+    "manifest_version": 2,
+    "name": "NoMoreVids",
+    "version": "1.0",
+
+
+    "description": "For YouTube embeds, this removes the \"more videos\" and the suggested videos at the end.",
+
+
+    "content_scripts": [{
+        "matches": ["*://www.youtube.com/embed/*", "*://www.youtube-nocookie.com/embed/*"],
+        "js": ["index.js"]
+    }],
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "nomorevids@nomorevids.nmv"
+        }
+    }
+}
